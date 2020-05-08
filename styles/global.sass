@@ -1,0 +1,56 @@
+@import fonts.sass
+  
+:root
+  // Font Families
+  --sans-serif-family: --apple-system, Helvetica, sans-serif
+  --name-sans-family: 'Name Sans', sans-serif
+  --serif-family: Georgia, serif
+  --monospace-family: 'SF Mono', Menlo, Monaco, monospace
+
+  // Colors
+  --background-color: #FFF
+  --text-color: #333
+  --accent-color: #0070f3
+
+  // Font Sizes
+  --large-text-size: 28px
+  --medium-text-size: 21px
+  --base-text-size: 16px
+  --small-text-size: 14px
+  --tiny-text-size: 12px
+  
+  @media (prefers-color-scheme:dark)
+    // Colors
+    --background-color: #191919
+    --text-color: #FAFAFA
+    --accent-color: #0070f3
+  
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: grayscale
+
+body, html
+  background-color: var(--background-color)
+  color: var(--text-color)
+  padding: 0
+  margin: 0
+  font-family: -apple-system, sans-serif
+  font-size: var(--base-text-size)
+  line-height: 1.6
+  transition: .1s ease-out
+
+a
+  color: var(--accent-color)
+  text-decoration: none
+  transition: ease-out .2s
+  &:hover
+    text-decoration: underline
+
+img
+  max-width: 100%
+  display: block
+  transition: .2s ease-out
+
+.siteTitleHeader
+  font-family: var(--name-sans-family)
