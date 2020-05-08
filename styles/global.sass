@@ -1,14 +1,15 @@
 @import fonts.sass
-  
+
 :root
   // Font Families
   --sans-serif-family: --apple-system, Helvetica, sans-serif
-  --name-sans-family: 'Name Sans', sans-serif
+  --name-sans-family: Name Sans, sans-serif
   --serif-family: Georgia, serif
-  --monospace-family: 'SF Mono', Menlo, Monaco, monospace
+  --monospace-family: Majouji Code, Menlo, Monaco, monospace
 
   // Colors
   --background-color: #FFF
+  --background-code: #F3f3f3
   --text-color: #333
   --accent-color: #0070f3
 
@@ -18,13 +19,15 @@
   --base-text-size: 16px
   --small-text-size: 14px
   --tiny-text-size: 12px
-  
+  --code-text-size: 13px
+
   @media (prefers-color-scheme:dark)
     // Colors
     --background-color: #191919
+    --background-code: #222
     --text-color: #FAFAFA
     --accent-color: #0070f3
-  
+
 *
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
@@ -46,6 +49,14 @@ a
   transition: ease-out .2s
   &:hover
     text-decoration: underline
+
+pre, code
+  font-family: var(--monospace-family)
+  font-size: var(--code-text-size)
+
+pre
+  background-color: var(--background-code)
+  padding: 16px
 
 img
   max-width: 100%
