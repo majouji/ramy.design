@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Header from './header';
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import { Component, Fragment } from "react";
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji";
@@ -28,7 +26,52 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header></Header>
+      <header className={styles.header}>
+        {home ? (
+          <>
+            <img
+              src="/images/ramy.jpg"
+              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              alt={name}
+            />
+            <h1 className="siteTitleHeader">{name}</h1>
+            <GlobalNav></GlobalNav>
+              <p>
+                <a
+                  href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-dnt="true"
+                  data-show-count="false"
+                >
+                  Follow @majouji
+                </a>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </p>
+          </>
+        ) : ( // If not the home page
+          <>
+            <Link href="/">
+              <a>
+                <img
+                  src="/images/ramy.jpg"
+                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  alt={name}
+                />
+              </a>
+            </Link>
+            <h2 className={utilStyles.headingLg}>
+              <Link href="/">
+                <a className={utilStyles.colorInherit}>{name}</a>
+              </Link>
+            </h2>
+            <GlobalNav></GlobalNav>
+          </>
+        )}
+      </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
