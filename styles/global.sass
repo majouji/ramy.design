@@ -89,7 +89,11 @@ kbd
   text-transform: uppercase
 
 iframe
-  max-width: 100%
+  width: 100%
+  max-height: 100%
+  left: 0
+  right: 0
+  border: 0
 
 blockquote
   font-family: var(--serif-font-famiy)
@@ -177,6 +181,12 @@ th
   padding: 40px
   width: 100%
 
+.flush-bottom
+  padding-bottom: 0
+
+.reduced-padding
+  padding: 8px
+
 .lead-paragraph
   font-size: var(--medium-text-size)
   line-height: 1.4
@@ -184,6 +194,15 @@ th
 .myExample
   border-radius: var(--border-radius)
   background-color: var(--background-code)
-  box-shadow: 2px 2px 4px rgba(0,0,0,.4)
-  width: 64px
+  box-shadow: 0px 1px 10px rgba(0,0,0,.4)
   height: 64px
+  width: 64px
+  color: #FFF
+  margin: 4px 0
+  align-content: start
+  align-items: start
+  justify-items: start
+  display: grid
+  row-gap: 1.425rem
+  column-gap: 1.425rem
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr))

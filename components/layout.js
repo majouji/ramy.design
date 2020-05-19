@@ -61,6 +61,7 @@ export default function Layout({ children, home }) {
       <Link href="/work/square">
         <a>
           <Example></Example>
+          <Example></Example>
         </a>
       </Link>
       <main>{children}</main>

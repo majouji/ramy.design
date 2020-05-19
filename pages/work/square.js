@@ -11,6 +11,8 @@ export default function Square() {
       <p class='lead-paragraph'>Plumbers, caterers, massage therapists, fitness studios and home inspectors have all ditched paper invoices in favour of getting paid faster with online credit card payments via Square.</p>
       <p>Stuff goes here.</p>
       <img class='work-screenshot' src='/images/work/square-order.png'></img>
+      <p>A paragraph in between</p>
+      <img class='work-screenshot flush-bottom' src='/images/work/market.png'></img>
     </Layout>
   )
 }
