@@ -1,31 +1,17 @@
-import Head from "next/head";
+import GlobalHead from "./head"
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
+import Example from './card'
 
 const name = "@majouji";
-export const siteTitle = "Ramy Majouji";
+export const siteTitle = "Ramy Majouji, Product Designer";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       <header className={styles.header}>
         {home ? (
           <>
@@ -72,6 +58,11 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      <Link href="/work/square">
+        <a>
+          <Example></Example>
+        </a>
+      </Link>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

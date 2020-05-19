@@ -9,12 +9,11 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}, Product Designer</title>
+        <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Product Designer, currently building new things at{" "}
-          <a class="glossier-link" href="https://glossier.com" target="blank">
+          Product Designer, currently building new things at <a class="glossier-link" href="https://glossier.com" target="blank">
             Glossier
           </a>{" "}
           in New York. Previously from Square, Codecademy, and Cadre. Sharing
