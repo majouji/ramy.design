@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import Example from './card'
+import Button from './button'
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji, Product Designer";
@@ -58,12 +58,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <Link href="/work/square">
-        <a>
-          <Example></Example>
-          <Example></Example>
-        </a>
-      </Link>
+      <Button label='My Button 1' url="https://example.com"></Button>
+      <Button label='My Button 2' url="/work/square"></Button>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
