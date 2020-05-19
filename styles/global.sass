@@ -2,16 +2,16 @@
 
 :root
   // Font Families
-  --sans-serif-family: --apple-system, Helvetica, sans-serif
-  --name-sans-family: Name Sans, sans-serif
-  --serif-family: Georgia, serif
+  --sans-serif-family: 'Sohne', --apple-system, Helvetica, sans-serif
+  --serif-font-famiy: 'Heldane Text', Georgia, serif
   --monospace-family: Majouji Code, Menlo, Monaco, monospace
 
   // Colors
   --background-color: #FFF
   --background-code: #F3f3f3
   --text-color: #333
-  --accent-color: #0070f3
+  --text-color-secondary: #666
+  --accent-color: #02904C
 
   // Font Sizes
   --large-text-size: 28px
@@ -21,12 +21,15 @@
   --tiny-text-size: 12px
   --code-text-size: 13px
 
+  // Misc config
+  --border-radius: 4px
+
   @media (prefers-color-scheme:dark)
     // Colors
     --background-color: #191919
     --background-code: #222
     --text-color: #FAFAFA
-    --accent-color: #0070f3
+    --accent-color: #1FD27C
 
 *
   box-sizing: border-box
@@ -38,15 +41,15 @@ body, html
   color: var(--text-color)
   padding: 0
   margin: 0
-  font-family: -apple-system, sans-serif
+  font-family: var(--sans-serif-family)
   font-size: var(--base-text-size)
+  font-weight: 400
   line-height: 1.6
   transition: .1s ease-out
 
 a
   color: var(--accent-color)
   text-decoration: none
-  transition: ease-out .2s
   &:hover
     text-decoration: underline
 
@@ -57,11 +60,34 @@ pre, code
 pre
   background-color: var(--background-code)
   padding: 16px
+  border-radius: 4px
+
+blockquote
+  font-family: var(--serif-font-famiy)
+  font-size: var(--medium-text-size)
+  line-height: 1.5
+  margin: 0
+
+blockquote p
+  font-family: var(--serif-font-family)
+  &::before
+    content: '“'
+  &::after
+    content: '”'
 
 img
   max-width: 100%
   display: block
   transition: .2s ease-out
 
+.postTitle
+  margin-bottom: 0
+
+.postTimestamp
+  color: var(--text-color-secondary)
+
+.twitter-follow-button
+  margin: 0 auto
+
 .siteTitleHeader
-  font-family: var(--name-sans-family)
+  font-weight: 400
