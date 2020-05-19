@@ -1,4 +1,4 @@
-name: Compress images
+name: Optimize images
 on: pull_request
 jobs:
   build:
