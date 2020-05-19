@@ -9,14 +9,14 @@
   // Colors
   --background-color: #FFF
   --background-code: #F3f3f3
-  --text-color: #333
+  --text-color: rgba(0,0,0,.85)
   --text-color-secondary: #666
   --accent-color: #02904C
 
   // Font Sizes
   --large-text-size: 28px
   --medium-text-size: 21px
-  --base-text-size: 18px
+  --base-text-size: 16px
   --small-text-size: 14px
   --tiny-text-size: 12px
   --code-text-size: 13px
@@ -26,10 +26,12 @@
 
   @media (prefers-color-scheme:dark)
     // Colors
-    --background-color: #191919
+    --background-color: #101116
     --background-code: #222
-    --text-color: #FAFAFA
-    --accent-color: #1FD27C
+    --text-color: rgba(255,255,255,.8)
+    --accent-color: #18C788
+    --accent-color-hover: #53c49a
+    --accent-color-active: rgba(24,199,136,.6)
 
 *
   box-sizing: border-box
@@ -45,13 +47,19 @@ body, html
   font-size: var(--base-text-size)
   font-weight: 400
   line-height: 1.6
-  transition: .1s ease-out
 
 a
   color: var(--accent-color)
   text-decoration: none
+  transition: 160ms ease-out
   &:hover
+    color: var(--accent-color-hover)
     text-decoration: underline
+    &::after
+      content: '→'
+  &:active
+    color: var(--accent-color-active)
+    bottom: 0
 
 pre, code
   font-family: var(--monospace-family)
@@ -61,6 +69,9 @@ pre
   background-color: var(--background-code)
   padding: 16px
   border-radius: 4px
+
+iframe
+  max-width: 100%
 
 blockquote
   font-family: var(--serif-font-famiy)
@@ -80,6 +91,10 @@ img
   display: block
   transition: .2s ease-out
 
+img
+  &:hover
+    scale: 2
+
 .postTitle
   margin-bottom: 0
 
@@ -91,3 +106,7 @@ img
 
 .siteTitleHeader
   font-weight: 400
+
+.glossierLink a
+  background-color: var(--background-code)
+  padding: 8px

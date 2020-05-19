@@ -16,3 +16,5 @@ Kevin Rose:
 >
 > “have we tested this in a focus group?”
 > It was my job to counter these doubts by selling the vision. __This is something I failed to do.__ In the end I compromised on functionality, building the easier “me too” features that were standard in the industry, while leaving dozens of deeper features on the cutting room floor.A team aligned behind a vision will move mountains. Sell them on your roadmap and don’t compromise — care about the details, the fit and finish. Only work with those that have (as Larry Page puts it) “a healthy disregard for the impossible,” and push everyone on your team until it’s uncomfortable.
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvZWnvVso2F1vB8SJXILTsk%2FiOS-13-UI-Kit-Built-for-Figma-Community%3Fnode-id%3D0%253A1" allowfullscreen></iframe>

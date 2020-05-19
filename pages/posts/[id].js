@@ -1,4 +1,4 @@
-import Layout from '../../components/layout'
+import Layout, { siteTitle } from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import Head from 'next/head'
@@ -7,7 +7,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} – {siteTitle}</title>
       </Head>
       <article>
         <h1 className='postTitle'>{postData.title}</h1>

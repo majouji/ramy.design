@@ -12,13 +12,8 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}, Product Designer</title>
       </Head>
       <section className={utilStyles.headingMd}>
-      <p>
-          <a href="https://twitter.com/majouji?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true" data-show-count="false">Follow @majouji</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-        </script>
-        </p>
         <p>
-        Product Designer, currently building new things at <a href="https://glossier.com" target="blank">Glossier</a> in New York. Previously from Square, Codecademy, and Cadre. Sharing photography, tech tips, random quotes, and other nonsense here since 2008.
+        Product Designer, currently building new things at <a class="glossierLink" href="https://glossier.com" target="blank">Glossier</a> in New York. Previously from Square, Codecademy, and Cadre. Sharing photography, tech tips, random quotes, and other nonsense here since 2008.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -36,6 +31,14 @@ export default function Home({ allPostsData }) {
          </li>
           ))}
         </ul>
+      </section>
+      <section>
+      <p>
+        <a href="https://twitter.com/majouji?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true" data-show-count="false">Follow @majouji</a>
+        <script
+          async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+      </p>
       </section>
     </Layout>
   );
