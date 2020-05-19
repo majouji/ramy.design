@@ -10,7 +10,7 @@ export default function Post({ postData }) {
         <title>{postData.title} – {siteTitle}</title>
       </Head>
       <article>
-        <h1 className='postTitle'>{postData.title}</h1>
+        <h1 className='post-title'>{postData.title}</h1>
         <div>
           <Date dateString={postData.date} />
         </div>

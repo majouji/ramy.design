@@ -1,10 +1,12 @@
-import Head from "next/head"
-import styles from "./layout.module.css"
-import utilStyles from "../styles/utils.module.css"
-import Link from "next/link"
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import Footer from "./footer";
+import { Component, Fragment } from "react";
 
-const name = "@majouji"
-export const siteTitle = "Ramy Majouji"
+const name = "@majouji";
+export const siteTitle = "Ramy Majouji";
 
 export default function Layout({ children, home }) {
   return (
@@ -33,6 +35,23 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className="siteTitleHeader">{name}</h1>
+            <section>
+              <p>
+                <a
+                  href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-dnt="true"
+                  data-show-count="false"
+                >
+                  Follow @majouji
+                </a>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </p>
+            </section>
           </>
         ) : (
           <>
@@ -61,6 +80,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <Footer></Footer>
     </div>
   );
 }

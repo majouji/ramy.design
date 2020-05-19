@@ -55,13 +55,14 @@ a
   &:hover
     color: var(--accent-color-hover)
     text-decoration: underline
-    &::after
-      content: '→'
   &:active
     color: var(--accent-color-active)
     bottom: 0
 
-pre, code
+article img
+  margin: 0 auto
+
+pre, code, kbd
   font-family: var(--monospace-family)
   font-size: var(--code-text-size)
 
@@ -69,6 +70,14 @@ pre
   background-color: var(--background-code)
   padding: 16px
   border-radius: 4px
+
+kbd
+  background-color: var(--background-code)
+  border-radius: 3px
+  font-size: var(--tiny-text-size)
+  margin: 0 4px
+  padding: 6px 8px
+  text-transform: uppercase
 
 iframe
   max-width: 100%
@@ -90,13 +99,27 @@ img
   max-width: 100%
   display: block
   transition: .2s ease-out
+  
+footer
+  margin-top: 64px
 
-img
-  &:hover
-    scale: 2
+footer p
+  color: var(--text-color-secondary)
+  font-size: var(--small-text-size)
+  margin: 4px 0
+  line-height: 1.4
 
-.postTitle
-  margin-bottom: 0
+footer a
+  color: var(--text-color)
+  text-decoration: none
+
+footer hr
+  border: .5px solid var(--background-code)
+  margin: 20px 0
+
+.post-title
+  margin: 16px 0
+  list-style: none
 
 .postTimestamp
   color: var(--text-color-secondary)
@@ -107,6 +130,7 @@ img
 .siteTitleHeader
   font-weight: 400
 
-.glossierLink a
+.glossier-link a
+  color: pink
   background-color: var(--background-code)
   padding: 8px
