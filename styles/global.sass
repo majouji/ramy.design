@@ -51,13 +51,15 @@ body, html
 a
   color: var(--accent-color)
   text-decoration: none
-  transition: 160ms ease-out
+  transition: 100ms ease-out
   &:hover
     color: var(--accent-color-hover)
-    text-decoration: underline
+    text-decoration: none
+    border-bottom: 1px solid var(--accent-color-hover)
   &:active
     color: var(--accent-color-active)
     bottom: 0
+    transition: 70ms ease-out
 
 article img
   margin: 0 auto
@@ -99,7 +101,15 @@ img
   max-width: 100%
   display: block
   transition: .2s ease-out
-  
+
+img a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+header p
+  margin: 0
+
 footer
   margin-top: 64px
 
@@ -130,7 +140,17 @@ footer hr
 .siteTitleHeader
   font-weight: 400
 
-.glossier-link a
+.glossier-link
   color: pink
-  background-color: var(--background-code)
-  padding: 8px
+  font-style: italic
+
+.contains-task-list
+  margin: 0
+  padding: 0
+
+.task-list-item
+  list-style: none
+
+.task-list-item input
+  position: relative
+  bottom: 2px

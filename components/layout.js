@@ -35,7 +35,6 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className="siteTitleHeader">{name}</h1>
-            <section>
               <p>
                 <a
                   href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
@@ -51,7 +50,6 @@ export default function Layout({ children, home }) {
                   charset="utf-8"
                 ></script>
               </p>
-            </section>
           </>
         ) : (
           <>
