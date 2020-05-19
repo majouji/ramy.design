@@ -13,5 +13,5 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           jpegQuality: "90"
-          pngQuality: "90"
+          pngQuality: "85"
           webpQuality: "90"

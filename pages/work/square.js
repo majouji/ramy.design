@@ -8,7 +8,9 @@ export default function Square() {
         <title>Square – {siteTitle}</title>
       </Head>
       <h1>Square</h1>
+      <p class='lead-paragraph'>Plumbers, caterers, massage therapists, fitness studios and home inspectors have all ditched paper invoices in favour of getting paid faster with online credit card payments via Square.</p>
       <p>Stuff goes here.</p>
+      <img class='work-screenshot' src='/images/work/square-order.png'></img>
     </Layout>
   )
 }
