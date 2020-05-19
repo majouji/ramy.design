@@ -23,6 +23,7 @@
 
   // Misc config
   --border-radius: 4px
+  --transition: 100ms ease-out
 
   @media (prefers-color-scheme:dark)
     // Colors
@@ -51,7 +52,7 @@ body, html
 a
   color: var(--accent-color)
   text-decoration: none
-  transition: 100ms ease-out
+  transition: var(--transition)
   &:hover
     color: var(--accent-color-hover)
     text-decoration: none
@@ -60,6 +61,12 @@ a
     color: var(--accent-color-active)
     bottom: 0
     transition: 70ms ease-out
+
+ul, ol
+  padding: 0 20px
+
+ol
+  font-variant-numeric: tabular-nums
 
 article img
   margin: 0 auto
@@ -71,11 +78,11 @@ pre, code, kbd
 pre
   background-color: var(--background-code)
   padding: 16px
-  border-radius: 4px
+  border-radius: var(--border-radius)
 
 kbd
   background-color: var(--background-code)
-  border-radius: 3px
+  border-radius: var(--border-radius)
   font-size: var(--tiny-text-size)
   margin: 0 4px
   padding: 6px 8px
@@ -89,10 +96,10 @@ blockquote
   font-size: var(--medium-text-size)
   line-height: 1.45
   margin: 0
-  &::before
-    content: '“'
-  &::after
-    content: '”'
+  // &::before
+  //  content: '“'
+  // &::after
+  //  content: '”'
 
 blockquote p
   font-family: var(--serif-font-family)
@@ -100,7 +107,6 @@ blockquote p
 img
   max-width: 100%
   display: block
-  transition: .2s ease-out
 
 img a
   text-decoration: none
@@ -150,7 +156,9 @@ footer hr
 
 .task-list-item
   list-style: none
+  padding-bottom: 2px
 
 .task-list-item input
   position: relative
   bottom: 2px
+  margin-right: 8px

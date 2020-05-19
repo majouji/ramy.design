@@ -3,7 +3,7 @@ title: 'Markdown styles'
 date: '2020-01-31'
 ---
 
-All the styles yo. My favorite keyboard shortcut is <kbd>Command + Shift + Alt + 8</kbd>. Make sure to do `npm install` to lorem ipsum dolor.
+All the styles yo. My favorite keyboard shortcut is <kbd>⌘ + Shift + Alt + 8</kbd>. Make sure to do `npm install` to lorem ipsum dolor.
 
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
@@ -35,8 +35,8 @@ function fancyAlert(arg) {
 
 ## Quotes
 
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
+> Coffee. The finest organic suspension ever devised... I beat the Borg with it.<br />
+> &mdash; Captain Janeway
 
 Here’s some emoji 🤛🏽👄💻🏔
 

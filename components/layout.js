@@ -3,6 +3,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
+import GlobalNav from "./global-nav";
 import { Component, Fragment } from "react";
 
 const name = "@majouji";
@@ -35,6 +36,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className="siteTitleHeader">{name}</h1>
+            <GlobalNav></GlobalNav>
               <p>
                 <a
                   href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
@@ -51,7 +53,7 @@ export default function Layout({ children, home }) {
                 ></script>
               </p>
           </>
-        ) : (
+        ) : ( // If not the home page
           <>
             <Link href="/">
               <a>
@@ -67,6 +69,7 @@ export default function Layout({ children, home }) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+            <GlobalNav></GlobalNav>
           </>
         )}
       </header>
