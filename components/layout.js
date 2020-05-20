@@ -59,7 +59,7 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <ButtonInternal
-        label='My Button 2'
+        label='My Production Button'
         url="/work/square">
       </ButtonInternal>
       <main>{children}</main>
