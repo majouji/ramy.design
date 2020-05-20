@@ -1,32 +1,17 @@
-import Head from "next/head";
-import styles from "./layout.module.css";
+import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import { Component, Fragment } from "react";
+import ButtonInternal from './button'
 
 const name = "@majouji";
-export const siteTitle = "Ramy Majouji";
+export const siteTitle = "Ramy Majouji, Product Designer";
+export const metaDescription = "Ramy Majouji is a product designer and developer in New York, currently at Glossier."
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       <header className={styles.header}>
         {home ? (
           <>
@@ -40,7 +25,7 @@ export default function Layout({ children, home }) {
               <p>
                 <a
                   href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
+                  className="twitter-follow-button"
                   data-dnt="true"
                   data-show-count="false"
                 >
@@ -49,7 +34,7 @@ export default function Layout({ children, home }) {
                 <script
                   async
                   src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
+                  charSet="utf-8"
                 ></script>
               </p>
           </>
@@ -73,6 +58,10 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      <ButtonInternal
+        label='My Button 2'
+        url="/work/square">
+      </ButtonInternal>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

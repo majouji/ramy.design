@@ -33,6 +33,16 @@ function fancyAlert(arg) {
 }
 ```
 
+| Card Number           | Country        | Brand        |
+| --------------------- | -------------- | ------------ |
+| `4000 0012 4000 0000` | Canada         | Visa         |
+| `4000 0020 8000 0001` | Denmark        | Visa         |
+| `4000 0037 2000 0005` | Ireland        | Visa         |
+| `4000 0075 2000 0008` | Sweden         | Visa         |
+| `4000 0082 6000 0000` | United Kingdom | Visa         |
+| `4000 0582 6000 0005` | United Kingdom | Visa (debit) |
+| `3530 1113 3330 0000` | Japan          | JCB          |
+
 ## Quotes
 
 > Coffee. The finest organic suspension ever devised... I beat the Borg with it.<br />

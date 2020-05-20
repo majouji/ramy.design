@@ -1,10 +1,8 @@
-@import fonts.sass
-
 :root
   // Font Families
-  --sans-serif-family: 'Sohne', --apple-system, Helvetica, sans-serif
+  --sans-serif-family: 'Sohne', --apple-system, Helvetica, Arial, sans-serif
   --serif-font-famiy: 'Heldane Text', Georgia, serif
-  --monospace-family: Majouji Code, Menlo, Monaco, monospace
+  --monospace-family: 'SF Mono', Menlo, Monaco, monospace
 
   // Colors
   --background-color: #FFF
@@ -14,7 +12,7 @@
   --accent-color: #02904C
 
   // Font Sizes
-  --large-text-size: 28px
+  --large-text-size: 32px
   --medium-text-size: 21px
   --base-text-size: 16px
   --small-text-size: 14px
@@ -24,6 +22,7 @@
   // Misc config
   --border-radius: 4px
   --transition: 100ms ease-out
+  --animation-fast: cubic-bezier(0.19,1,0.22,1)
 
   @media (prefers-color-scheme:dark)
     // Colors
@@ -31,7 +30,7 @@
     --accent-color-hover: #53c49a
     --accent-color-active: rgba(24,199,136,.6)
     --background-color: #101116
-    --background-code: #222
+    --background-code: #181A23
     --text-color: rgba(255,255,255,.8)
 
 *
@@ -48,6 +47,15 @@ body, html
   font-size: var(--base-text-size)
   font-weight: 400
   line-height: 1.6
+
+h1
+  font-size: var(--large-text-size)
+
+h4
+  color: var(--text-color-secondary)
+  letter-spacing: 1px
+  font-weight: normal
+  text-transform: uppercase
 
 a
   color: var(--accent-color)
@@ -74,22 +82,29 @@ article img
 pre, code, kbd
   font-family: var(--monospace-family)
   font-size: var(--code-text-size)
+  background-color: var(--background-code)
+  border-radius: var(--border-radius)
+
+button
+  border: 0
 
 pre
-  background-color: var(--background-code)
   padding: 16px
-  border-radius: var(--border-radius)
 
-kbd
-  background-color: var(--background-code)
-  border-radius: var(--border-radius)
+code, kbd
   font-size: var(--tiny-text-size)
   margin: 0 4px
   padding: 6px 8px
+
+kbd
   text-transform: uppercase
 
 iframe
-  max-width: 100%
+  width: 100%
+  max-height: 100%
+  left: 0
+  right: 0
+  border: 0
 
 blockquote
   font-family: var(--serif-font-famiy)
@@ -107,6 +122,8 @@ blockquote p
 img
   max-width: 100%
   display: block
+  &:hover
+    text-decoration: none
 
 img a
   text-decoration: none
@@ -132,6 +149,9 @@ footer a
 footer hr
   border: .5px solid var(--background-code)
   margin: 20px 0
+
+td
+  padding-right: 40px
 
 th
   text-align: left
@@ -165,3 +185,47 @@ th
   position: relative
   bottom: 2px
   margin-right: 8px
+
+.work-screenshot
+  background-color: var(--background-code)
+  border-radius: var(--border-radius)
+  padding: 40px
+  width: 100%
+  @media screen and ( max-width: 380px )
+    padding: 16px
+
+.flush-bottom
+  padding-bottom: 0
+
+.reduced-padding
+  padding: 8px
+
+.lead-paragraph
+  font-size: var(--medium-text-size)
+  line-height: 1.4
+
+.button-container
+  border-radius: var(--border-radius)
+  background-color: var(--background-code)
+  border: 1px solid rgba(255,255,255,.05)
+  height: 64px
+  min-width: 120px
+  color: #FFF
+  margin: 4px 0
+  align-content: start
+  align-items: start
+  justify-items: start
+  display: grid
+  row-gap: 1.425rem
+  column-gap: 1.425rem
+  transition: var(--animation-fast)
+  transition-duration: 180ms
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr))
+  &:hover
+    transform: scale(1.05)
+  &:active
+    transform: scale(0.97)
+
+.button-label
+  color: var(--accent-color)
+  text-transform: uppercase
