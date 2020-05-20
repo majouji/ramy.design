@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 /*
@@ -32,13 +31,9 @@ export function ButtonInternal({ label, url }) {
   return (
     <Link href={url}>
       <a>
-        <motion.button
-          className="button-container"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.96 }}
-        >
+        <button className="button-container">
           <span className="button-label">{label}</span>
-        </motion.button>
+        </button>
       </a>
     </Link>
   );
@@ -46,14 +41,11 @@ export function ButtonInternal({ label, url }) {
 
 export default function ButtonExternal({ label, url }) {
   return (
-      <a href={url}>
-        <motion.button
-          className="button-container"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.96 }}
-        >
-          <span className="button-label">{label}</span>
-        </motion.button>
-      </a>
+    <a href={url}>
+      <button
+        className="button-container">
+        <span className="button-label">{label}</span>
+      </button>
+    </a>
   );
 }

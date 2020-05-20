@@ -87,6 +87,9 @@ pre, code, kbd
   background-color: var(--background-code)
   border-radius: var(--border-radius)
 
+button
+  border: 0
+
 pre
   padding: 16px
 
@@ -206,9 +209,9 @@ th
 .button-container
   border-radius: var(--border-radius)
   background-color: var(--background-code)
-  box-shadow: 0px 1px 10px rgba(0,0,0,.4)
+  border: 1px solid rgba(255,255,255,.05)
   height: 64px
-  width: 64px
+  min-width: 120px
   color: #FFF
   margin: 4px 0
   align-content: start
@@ -217,7 +220,13 @@ th
   display: grid
   row-gap: 1.425rem
   column-gap: 1.425rem
+  transition: var(--animation-fast)
+  transition-duration: 1s
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr))
+  &:hover
+    transform: scale(1.05)
+  &:active
+    transform: scale(0.97)
 
 .button-label
   color: var(--accent-color)

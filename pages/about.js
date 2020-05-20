@@ -6,7 +6,6 @@ export default function About() {
   return (
     <Layout children>
       <Head>
-        <GlobalHead></GlobalHead>
         <title>About &ndash; {siteTitle}</title>
       </Head>
       <h3>Hi, I’m Ramy. Welcome to my home online.</h3>

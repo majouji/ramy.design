@@ -1,14 +1,13 @@
-import GlobalHead from "./head"
-import styles from "./layout.module.css";
+import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
 import ButtonInternal from './button'
-import ButtonExternal from './button'
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji, Product Designer";
+export const metaDescription = "Ramy Majouji is a product designer and developer in New York, currently at Glossier."
 
 export default function Layout({ children, home }) {
   return (
@@ -59,8 +58,10 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <ButtonExternal label='My Button 1' url="https://example.com"></ButtonExternal>
-      <ButtonInternal label='My Button 2' url="/work/square"></ButtonInternal>
+      <ButtonInternal
+        label='My Button 2'
+        url="/work/square">
+      </ButtonInternal>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

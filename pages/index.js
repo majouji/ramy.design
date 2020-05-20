@@ -4,12 +4,20 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import { metaDescription } from "../components/layout"
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
+      <meta
+        name="description"
+        content={metaDescription}
+      />
+      <meta name="og:title" content={siteTitle} />
+      <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
