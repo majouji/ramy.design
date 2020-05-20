@@ -1,6 +1,5 @@
 import Layout, { siteTitle } from "../components/layout"
-import GlobalHead from "../components/head"
-import Head from "next/head";
+import Head from "next/head"
 
 export default function About() {
   return (
