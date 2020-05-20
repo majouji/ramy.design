@@ -4,7 +4,8 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import Button from './button'
+import ButtonInternal from './button'
+import ButtonExternal from './button'
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji, Product Designer";
@@ -25,7 +26,7 @@ export default function Layout({ children, home }) {
               <p>
                 <a
                   href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
+                  className="twitter-follow-button"
                   data-dnt="true"
                   data-show-count="false"
                 >
@@ -34,7 +35,7 @@ export default function Layout({ children, home }) {
                 <script
                   async
                   src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
+                  charSet="utf-8"
                 ></script>
               </p>
           </>
@@ -58,8 +59,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <Button label='My Button 1' url="https://example.com"></Button>
-      <Button label='My Button 2' url="/work/square"></Button>
+      <ButtonExternal label='My Button 1' url="https://example.com"></ButtonExternal>
+      <ButtonInternal label='My Button 2' url="/work/square"></ButtonInternal>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

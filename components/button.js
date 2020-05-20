@@ -28,7 +28,7 @@ export default function Button({ label }) {
 }
 */
 
-export default function Button({ label, url }) {
+export function ButtonInternal({ label, url }) {
   return (
     <Link href={url}>
       <a>
@@ -41,5 +41,19 @@ export default function Button({ label, url }) {
         </motion.button>
       </a>
     </Link>
+  );
+}
+
+export default function ButtonExternal({ label, url }) {
+  return (
+      <a href={url}>
+        <motion.button
+          className="button-container"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.96 }}
+        >
+          <span className="button-label">{label}</span>
+        </motion.button>
+      </a>
   );
 }
