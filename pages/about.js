@@ -1,5 +1,6 @@
 import Layout, { siteTitle } from "../components/layout"
 import Head from "next/head"
+import AppleMusic from "../components/apple-music"
 
 export default function About() {
   return (
@@ -22,13 +23,10 @@ export default function About() {
         — and have seen some of it published by Forbes, Yahoo Finance, and Built
         in NYC.
       </p>
-      <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450"
-      style={{
-            width:'100%',
-            maxWidth: '660px',
-            overflow:'hidden',
-            background: 'transparent'
-          }} sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/arabic/pl.u-drXjC9Wl0a"></iframe>
+      <AppleMusic
+        url="https://embed.music.apple.com/us/playlist/arabic/pl.u-drXjC9Wl0a"
+        height="450px"
+        />
     </Layout>
   );
 }
