@@ -1,37 +1,9 @@
-:root
-  // Font Families
-  --sans-serif-family: 'Sohne', --apple-system, Helvetica, Arial, sans-serif
-  --serif-font-famiy: 'Heldane Text', Georgia, serif
-  --monospace-family: 'SF Mono', Menlo, Monaco, monospace
+@import variables.sass
 
-  // Colors
-  --background-color: #FFF
-  --background-code: #F3f3f3
-  --text-color: rgba(0,0,0,.85)
-  --text-color-secondary: #666
-  --accent-color: #02904C
-
-  // Font Sizes
-  --large-text-size: 32px
-  --medium-text-size: 21px
-  --base-text-size: 16px
-  --small-text-size: 14px
-  --tiny-text-size: 12px
-  --code-text-size: 13px
-
-  // Misc config
-  --border-radius: 4px
-  --transition: 100ms ease-out
-  --animation-fast: cubic-bezier(0.19,1,0.22,1)
-
-  @media (prefers-color-scheme:dark)
-    // Colors
-    --accent-color: #18C788
-    --accent-color-hover: #53c49a
-    --accent-color-active: rgba(24,199,136,.6)
-    --background-color: #101116
-    --background-code: #181A23
-    --text-color: rgba(255,255,255,.8)
+@media (prefers-reduced-motion: reduce)
+  *
+    transform: none !important
+    transition: none 
 
 *
   box-sizing: border-box
@@ -39,34 +11,34 @@
   -moz-font-smoothing: grayscale
 
 body, html
-  background-color: var(--background-color)
-  color: var(--text-color)
+  background-color: var(--background-main)
+  color: var(--color-text)
   padding: 0
   margin: 0
-  font-family: var(--sans-serif-family)
-  font-size: var(--base-text-size)
+  font-family: var(--font-family-sans)
+  font-size: var(--font-size-base)
   font-weight: 400
   line-height: 1.6
 
 h1
-  font-size: var(--large-text-size)
+  font-size: var(--font-size-large)
 
 h4
-  color: var(--text-color-secondary)
+  color: var(--color-text-secondary)
   letter-spacing: 1px
   font-weight: normal
   text-transform: uppercase
 
 a
-  color: var(--accent-color)
+  color: var(--color-accent)
   text-decoration: none
   transition: var(--transition)
   &:hover
-    color: var(--accent-color-hover)
+    color: var(--color-accent-hover)
     text-decoration: none
-    border-bottom: 1px solid var(--accent-color-hover)
+    border-bottom: 1px solid var(--color-accent-hover)
   &:active
-    color: var(--accent-color-active)
+    color: var(--color-accent-active)
     bottom: 0
     transition: 70ms ease-out
 
@@ -80,8 +52,8 @@ article img
   margin: 0 auto
 
 pre, code, kbd
-  font-family: var(--monospace-family)
-  font-size: var(--code-text-size)
+  font-family: var(--font-family-mono)
+  font-size: var(--font-size-code)
   background-color: var(--background-code)
   border-radius: var(--border-radius)
 
@@ -92,7 +64,7 @@ pre
   padding: 16px
 
 code, kbd
-  font-size: var(--tiny-text-size)
+  font-size: var(--font-size-tiny)
   margin: 0 4px
   padding: 6px 8px
 
@@ -107,17 +79,13 @@ iframe
   border: 0
 
 blockquote
-  font-family: var(--serif-font-famiy)
-  font-size: var(--medium-text-size)
+  font-family: var(--font-family-serif)
+  font-size: var(--font-size-medium)
   line-height: 1.45
   margin: 0
-  // &::before
-  //  content: '“'
-  // &::after
-  //  content: '”'
 
 blockquote p
-  font-family: var(--serif-font-family)
+  font-family: var(--font-family-serif)
 
 img
   max-width: 100%
@@ -137,13 +105,13 @@ footer
   margin-top: 64px
 
 footer p
-  color: var(--text-color-secondary)
-  font-size: var(--small-text-size)
+  color: var(--color-text-secondary)
+  font-size: var(--font-size-small)
   margin: 4px 0
   line-height: 1.4
 
 footer a
-  color: var(--text-color)
+  color: var(--color-text)
   text-decoration: none
 
 footer hr
@@ -161,7 +129,7 @@ th
   list-style: none
 
 .postTimestamp
-  color: var(--text-color-secondary)
+  color: var(--color-text-secondary)
 
 .twitter-follow-button
   margin: 0 auto
@@ -201,7 +169,7 @@ th
   padding: 8px
 
 .lead-paragraph
-  font-size: var(--medium-text-size)
+  font-size: var(--font-size-medium)
   line-height: 1.4
 
 .button-container
@@ -227,5 +195,5 @@ th
     transform: scale(0.97)
 
 .button-label
-  color: var(--accent-color)
+  color: var(--color-accent)
   text-transform: uppercase
