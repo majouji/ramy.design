@@ -53,8 +53,8 @@ function fancyAlert(arg) {
 
 ## Quotes
 
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.<br />
-> &mdash; Captain Janeway
+> Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I beat the Borg with it.<br />
+> <span class="author">&mdash; Captain Janeway</span>
 
 Here’s some emoji 🤛🏽👄💻🏔
 
