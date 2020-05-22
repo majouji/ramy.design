@@ -19,6 +19,17 @@ body, html
   font-weight: 400
   line-height: 1.6
 
+::selection
+  background: var(--color-accent)
+  color: var(--background-main)
+
+a::selection
+  text-decoration: underline !important
+
+::-moz-selection
+  background-color: var(--color-highlight)
+  color: var(--color-accent)
+
 h1
   font-size: var(--font-size-large)
 
