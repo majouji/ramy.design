@@ -1,8 +1,11 @@
 @import variables.sass
 @media (prefers-reduced-motion: reduce)
   *
+    -webkit-animation: none !important
+    animation: none !important
     transform: none !important
-    transition: none
+    transition: none !important
+    scroll-behavior: auto !important
 
 *
   box-sizing: border-box
