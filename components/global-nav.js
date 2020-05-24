@@ -7,5 +7,5 @@ export default function GlobalNav() {
         <li>Contact</li>
       </ul>
     </nav>
-  )
+  );
 }

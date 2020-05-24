@@ -1,6 +1,6 @@
 ---
-title: 'Busbud for iPhone 1.1'
-date: '2013-01-31'
+title: "Busbud for iPhone 1.1"
+date: "2013-01-31"
 ---
 
 <figure>

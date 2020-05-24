@@ -31,9 +31,7 @@ export function ButtonInternal({ label, url }) {
   return (
     <Link href={url}>
       <a>
-        <button className="button-container">
-          {label} Hello
-        </button>
+        <button className="button-container">{label} Hello</button>
       </a>
     </Link>
   );
@@ -42,10 +40,7 @@ export function ButtonInternal({ label, url }) {
 export default function ButtonExternal({ label, url }) {
   return (
     <a href={url}>
-      <button
-        className="button-container">
-        {label}
-      </button>
+      <button className="button-container">{label}</button>
     </a>
   );
 }

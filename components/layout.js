@@ -3,11 +3,12 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import ButtonInternal from './button'
+import ButtonInternal from "./button";
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji, Product Designer";
-export const metaDescription = "Ramy Majouji is a product designer and developer in New York, currently at Glossier."
+export const metaDescription =
+  "Ramy Majouji is a product designer and developer in New York, currently at Glossier.";
 
 export default function Layout({ children, home }) {
   return (
@@ -22,23 +23,24 @@ export default function Layout({ children, home }) {
             />
             <h1 className="siteTitleHeader">{name}</h1>
             <GlobalNav></GlobalNav>
-              <p>
-                <a
-                  href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
-                  className="twitter-follow-button"
-                  data-dnt="true"
-                  data-show-count="false"
-                >
-                  Follow @majouji
-                </a>
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charSet="utf-8"
-                ></script>
-              </p>
+            <p>
+              <a
+                href="https://twitter.com/majouji?ref_src=twsrc%5Etfw"
+                className="twitter-follow-button"
+                data-dnt="true"
+                data-show-count="false"
+              >
+                Follow @majouji
+              </a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charSet="utf-8"
+              ></script>
+            </p>
           </>
-        ) : ( // If not the home page
+        ) : (
+          // If not the home page
           <>
             <Link href="/">
               <a>
@@ -59,9 +61,9 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <ButtonInternal
-        label='My Production Button'
-        url="/work/square">
-      </ButtonInternal>
+        label="My Production Button"
+        url="/work/square"
+      ></ButtonInternal>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

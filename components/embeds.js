@@ -21,7 +21,7 @@ export function SpotifyEmbed({ url, title }) {
       frameborder="0"
       allowtransparency="true"
       allow="encrypted-media"
-      tile={`${title}`}>
-    </iframe>
+      tile={`${title}`}
+    ></iframe>
   );
 }

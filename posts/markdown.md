@@ -1,6 +1,6 @@
 ---
-title: 'Markdown styles'
-date: '2020-01-31'
+title: "Markdown styles"
+date: "2020-01-31"
 ---
 
 ## Hi, I’m Ramy. Welcome to my home online.
@@ -13,7 +13,7 @@ As a photographer, I’ve been consistently creating personal work for the past 
 
 All the styles yo. My favorite keyboard shortcut is <kbd>⌘ + Shift + Alt + 8</kbd>. Make sure to do `npm install` to lorem ipsum dolor.
 
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+It's very easy to make some words **bold** and other words _italic_ with Markdown. You can even [link to Google!](http://google.com)
 
 Sometimes you want numbered lists:
 
@@ -23,8 +23,8 @@ Sometimes you want numbered lists:
 
 Sometimes you want bullet points:
 
-* Start a line with a star
-* Profit!
+- Start a line with a star
+- Profit!
 
 Alternatively,
 
@@ -35,8 +35,8 @@ Alternatively,
 
 ```javascript
 function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
+  if (arg) {
+    $.facebox({ div: "#foo" });
   }
 }
 ```
@@ -53,8 +53,7 @@ function fancyAlert(arg) {
 
 ## Quotes
 
-> Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I <mark>beat the Borg</mark> with it.<br />
-> <span class="author">&mdash; Captain Janeway</span>
+> Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I <mark>beat the Borg</mark> with it.<br /> > <span class="author">&mdash; Captain Janeway</span>
 
 Here’s some emoji 🤛🏽👄💻🏔
 
@@ -67,10 +66,10 @@ Here’s some emoji 🤛🏽👄💻🏔
 
 ## Tables
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 # Heading 1
 
