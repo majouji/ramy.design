@@ -23,7 +23,7 @@ export default function About() {
         — and have seen some of it published by Forbes, Yahoo Finance, and Built
         in NYC.
       </p>
-      <AppleMusic
+      <AppleMusicEmbed
         url="https://embed.music.apple.com/us/playlist/arabic/pl.u-drXjC9Wl0a"
         height="450px"
         />

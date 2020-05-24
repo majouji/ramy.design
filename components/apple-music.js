@@ -1,4 +1,4 @@
-export default function AppleMusic({ url, height }) {
+export default function AppleMusicEmbed({ url, height }) {
   return (
     <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450px"
       style={{
