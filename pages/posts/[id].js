@@ -17,8 +17,11 @@ export default function Post({ postData }) {
         <div>
           <Date dateString={postData.date} />
         </div>
-        <TweetButton></TweetButton>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <TweetButton
+          text="My post title"
+          url="https://example.com"
+          />
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   );

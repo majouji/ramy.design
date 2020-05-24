@@ -27,11 +27,13 @@ body, html
   color: var(--background-main)
 
 a::selection
+  background-color: var(--color-accent)
+  color: var(--color-text)
   text-decoration: underline !important
 
 ::-moz-selection
-  background-color: var(--color-highlight)
-  color: var(--color-accent)
+  background-color: var(--color-accent)
+  color: var(--background-main)
 
 h1
   font-size: var(--font-size-large)
@@ -48,6 +50,11 @@ a
     color: var(--color-accent-active)
     bottom: 0
     transition: 70ms ease-out
+
+article p
+  font-family: var(--font-serif-text)
+  font-size: var(--font-size-large)
+  line-height: 32px
 
 ul, ol
   padding: 0 20px

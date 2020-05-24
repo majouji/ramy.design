@@ -3,7 +3,7 @@ title: "Markdown styles"
 date: "2020-01-31"
 ---
 
-## Hi, I’m Ramy. Welcome to my home online.
+# Hi, I’m Ramy. Welcome to my home online.
 
 I hail from Montréal, Canada where I studied graphic design and developed a strong interest technology, design, and editorial photography very early on.
 
@@ -53,7 +53,8 @@ function fancyAlert(arg) {
 
 ## Quotes
 
-> Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I <mark>beat the Borg</mark> with it.<br /> > <span class="author">&mdash; Captain Janeway</span>
+> Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I <mark>beat the Borg</mark> with it.<br />
+> <span class="author">&mdash; Captain Janeway</span>
 
 Here’s some emoji 🤛🏽👄💻🏔
 

@@ -60,10 +60,6 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <ButtonInternal
-        label="My Production Button"
-        url="/work/square"
-      ></ButtonInternal>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
