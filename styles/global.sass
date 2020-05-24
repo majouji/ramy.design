@@ -111,11 +111,18 @@ img
 
 img a
   text-decoration: none
+  border-bottom: none
   &:hover
-    text-decoration: none
+    border-bottom: unset
 
 header p
   margin: 0
+
+figcaption
+  color: var(--color-text-secondary)
+  font-size: var(--font-size-small)
+  padding: 16px 0 0 0
+  text-align: center
 
 footer
   margin-top: 64px
@@ -199,28 +206,19 @@ nav li
 .button-container
   border-radius: var(--border-radius)
   background-color: var(--background-code)
-  border: 1px solid rgba(255,255,255,.05)
-  height: 64px
+  color: var(--accent-color)
+  font-size: var(--font-size-small)
   min-width: 120px
-  color: #FFF
-  margin: 4px 0
-  align-content: start
-  align-items: start
-  justify-items: start
-  display: grid
-  row-gap: 1.425rem
-  column-gap: 1.425rem
+  padding: 16px
+  text-decoration: none
   transition: var(--animation-fast)
   transition-duration: 180ms
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr))
   &:hover
     transform: scale(1.05)
+    text-decoration: none
   &:active
     transform: scale(0.97)
-
-.button-label
-  color: var(--color-accent)
-  text-transform: uppercase
+    text-decoration: none
 
 .embed--apple-music
   max-width: 100%
