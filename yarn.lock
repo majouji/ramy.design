@@ -1649,9 +1649,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001043:
-  version "1.0.30001062"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001062.tgz#d814b648338504b315222ace6f1a533d9a55e390"
-  integrity sha512-ei9ZqeOnN7edDrb24QfJ0OZicpEbsWxv7WusOiQGz/f2SfvBgHHbOEwBJ8HKGVSyx8Z6ndPjxzR6m0NQq+0bfw==
+  version "1.0.30001064"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001064.tgz#a0f49689119ba08943b09968e118faf3f645add0"
+  integrity sha512-hdBcQMFvJIrOhkpAZiRXz04Cmetwc9NekeuNl0qZfHOugxOhJKxsjF1RmISMPFjIF4PPx1reliIzbfN42EiQ5A==
 
 ccount@^1.0.0:
   version "1.0.5"
@@ -3015,21 +3015,21 @@ html-comment-regex@^1.1.0:
   integrity sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
 
 html-to-react@^1.3.4:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/html-to-react/-/html-to-react-1.4.2.tgz#7b628ab56cd63a52f2d0b79d0fa838a51f088a57"
-  integrity sha512-TdTfxd95sRCo6QL8admCkE7mvNNrXtGoVr1dyS+7uvc8XCqAymnf/6ckclvnVbQNUo2Nh21VPwtfEHd0khiV7g==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/html-to-react/-/html-to-react-1.4.3.tgz#1430a1cb581ef29533892ec70a2fdc4554b17ffd"
+  integrity sha512-txe09A3vxW8yEZGJXJ1is5gGDfBEVACmZDSgwDyH5EsfRdOubBwBCg63ZThZP0xBn0UE4FyvMXZXmohusCxDcg==
   dependencies:
     domhandler "^3.0"
-    htmlparser2 "^4.0"
+    htmlparser2 "^4.1.0"
     lodash.camelcase "^4.3.0"
-    ramda "^0.26"
+    ramda "^0.27"
 
 html-void-elements@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-1.0.5.tgz#ce9159494e86d95e45795b166c2021c2cfca4483"
   integrity sha512-uE/TxKuyNIcx44cIWnjr/rfIATDH7ZaOMmstu0CwhFG1Dunhlp4OC6/NMbhiwoq5BpW0ubi303qnEk/PZj614w==
 
-htmlparser2@4.1.0, htmlparser2@^4.0:
+htmlparser2@4.1.0, htmlparser2@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-4.1.0.tgz#9a4ef161f2e4625ebf7dfbe6c0a2f52d18a59e78"
   integrity sha512-4zDq1a1zhE4gQso/c5LP1OtrhYTncXNSpvJYtWJBtXAETPlMfi3IFNjGuQbYLuVY4ZR0QMqRVvo4Pdy9KLyP8Q==
@@ -4818,10 +4818,10 @@ querystring@0.2.0, querystring@^0.2.0:
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
-ramda@^0.26:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+ramda@^0.27:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
+  integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
