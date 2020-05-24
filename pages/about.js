@@ -1,6 +1,7 @@
-import Layout, { siteTitle } from "../components/layout"
-import Head from "next/head"
-import AppleMusic from "../components/apple-music"
+xwimport Layout, { siteTitle } from "../components/layout";
+import Head from "next/head";
+import AppleMusicEmbed from "../components/embeds/apple-music";
+import SpotifyEmbed from "../components/embeds/spotify"
 
 export default function About() {
   return (
@@ -15,7 +16,13 @@ export default function About() {
         photography very early on.
       </p>
       <p>
-        I have spent the last 8 years building digital products and apps at companies like Square, Codecademy, Citymaps (acquired by TripAdvisor in 2016), Busbud, and the National Film Board of Canada. Currently, I am a Product Designer at Glossier, building brand new experiences for beauty world. Products and contributions of mine have been highlighted by publications such as Fast Company, Fonts in Use, CBC/Radio-Canada, Condé Nast, and Y Combinator.
+        I have spent the last 8 years building digital products and apps at
+        companies like Square, Codecademy, Citymaps (acquired by TripAdvisor in
+        2016), Busbud, and the National Film Board of Canada. Currently, I am a
+        Product Designer at Glossier, building brand new experiences for beauty
+        world. Products and contributions of mine have been highlighted by
+        publications such as Fast Company, Fonts in Use, CBC/Radio-Canada, Condé
+        Nast, and Y Combinator.
       </p>
       <p>
         As a photographer, I’ve been consistently creating personal work for the
@@ -25,8 +32,10 @@ export default function About() {
       </p>
       <AppleMusicEmbed
         url="https://embed.music.apple.com/us/playlist/arabic/pl.u-drXjC9Wl0a"
-        height="450px"
-        />
+      />
+      <SpotifyEmbed
+        url="https://open.spotify.com/embed/album/73b3NhgAXQiC6fmbR0Y2CA"
+      />
     </Layout>
   );
 }
