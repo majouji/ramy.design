@@ -1,4 +1,4 @@
-export default function AppleMusicEmbed({ url, title }) {
+export function AppleMusicEmbed({ url, title }) {
   return (
     <iframe
       className="embed--apple-music"
@@ -10,5 +10,18 @@ export default function AppleMusicEmbed({ url, title }) {
       src={`${url}`}
       title={`${title}`}
     ></iframe>
+  );
+}
+
+export function SpotifyEmbed({ url, title }) {
+  return (
+    <iframe
+      className="embed--spotify"
+      src={`${url}`}
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+      tile={`${title}`}>
+    </iframe>
   );
 }
