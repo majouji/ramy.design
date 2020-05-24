@@ -1,6 +1,6 @@
-xwimport Layout, { siteTitle } from "../components/layout";
-import Head from "next/head";
-import AppleMusicEmbed from "../components/embeds/apple-music";
+import Layout, { siteTitle } from "../components/layout"
+import Head from "next/head"
+import AppleMusicEmbed from "../components/embeds/apple-music"
 import SpotifyEmbed from "../components/embeds/spotify"
 
 export default function About() {
