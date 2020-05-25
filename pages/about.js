@@ -29,14 +29,6 @@ export default function About() {
         — and have seen some of it published by Forbes, Yahoo Finance, and Built
         in NYC.
       </p>
-      <AppleMusicEmbed
-        url="https://embed.music.apple.com/us/playlist/arabic/pl.u-drXjC9Wl0a"
-        url="My Apple Music Playlist"
-      />
-      <SpotifyEmbed
-        url="https://open.spotify.com/embed/album/73b3NhgAXQiC6fmbR0Y2CA"
-        title="My Spotify Embed"
-      />
     </Layout>
   );
 }

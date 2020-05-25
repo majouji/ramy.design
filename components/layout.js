@@ -1,5 +1,4 @@
 import styles from "../styles/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
@@ -16,11 +15,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/ramy.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <img src="/images/ramy.jpg" alt={name} />
             <h1 className="siteTitleHeader">{name}</h1>
             <GlobalNav></GlobalNav>
             <p>
@@ -44,16 +39,12 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <img
-                  src="/images/ramy.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
+                <img src="/images/ramy.jpg" alt={name} />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>{name}</a>
               </Link>
             </h2>
             <GlobalNav></GlobalNav>

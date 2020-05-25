@@ -3,13 +3,10 @@ export default function Book({ url, imgSrc, title, author }) {
     <div>
       <a href={url} className="book">
         <figure>
-          <img
-            alt={`Book cover for ${title} by ${author}`}
-            src={imgSrc}
-          />
+          <img alt={`Book cover for ${title} by ${author}`} src={imgSrc} />
         </figure>
         <p>
-        <span className="book-title">{title}</span>
+          <span className="book-title">{title}</span>
           <br />
           <span className="book-author">{author}</span>
         </p>
