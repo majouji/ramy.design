@@ -1,8 +1,7 @@
-import styles from "../styles/layout.module.css";
+import styles from "./styles/layout.module.sass"
 import Link from "next/link";
 import Footer from "./footer";
 import GlobalNav from "./global-nav";
-import ButtonInternal from "./button";
 
 const name = "@majouji";
 export const siteTitle = "Ramy Majouji, Product Designer";
