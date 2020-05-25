@@ -1,5 +1,4 @@
-import "../styles/global.sass";
-import "../styles/fonts.sass";
+import "../styles/_all.sass";
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;

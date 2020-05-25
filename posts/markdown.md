@@ -33,12 +33,13 @@ Alternatively,
   - Like this
   - And this
 
-```javascript
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: "#foo" });
-  }
-}
+```
+## Task List
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 ```
 
 | Card Number           | Country        | Brand        |

@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img src="/images/ramy.jpg" alt={name} />
+            <img className="header-photo" src="/images/ramy.jpg" alt={name} />
             <h1 className="siteTitleHeader">{name}</h1>
             <GlobalNav></GlobalNav>
             <p>
@@ -38,7 +38,7 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <img src="/images/ramy.jpg" alt={name} />
+                <img className="header-photo" src="/images/ramy.jpg" alt={name} />
               </a>
             </Link>
             <h2>

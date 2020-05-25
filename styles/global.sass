@@ -1,4 +1,3 @@
-@import variables.sass
 @media (prefers-reduced-motion: reduce)
   *
     -webkit-animation: none !important
@@ -66,7 +65,7 @@ article img
   margin: 0 auto
 
 pre, code, kbd
-  font-family: var(--font-mono)
+  font-family: var(--font-mono-ibm)
   font-size: var(--font-size-code)
   background-color: var(--background-code)
   border-radius: var(--border-radius)
@@ -76,6 +75,9 @@ button
 
 pre
   padding: 16px
+  overflow-x: auto
+  white-space: pre-wrap
+  word-wrap: break-word
 
 code, kbd
   font-size: var(--font-size-code)
@@ -163,6 +165,11 @@ nav li
   font-size: var(--font-size-base)
   padding: 16px
 
+.header-photo
+  border-radius: 9999px
+  width: 64px
+  height: 64px
+
 .post-title
   margin: 16px 0
   list-style: none
@@ -248,3 +255,70 @@ nav li
 
 .grid a
   margin-top: 0
+
+.hljs
+  display: block
+  overflow-x: auto
+
+.hljs-comment,
+.hljs-quote
+  color: var(--color-syntax-comment)
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-title,
+.hljs-name
+  color: var(--color-syntax-title)
+
+.hljs-variable,
+.hljs-template-variable
+  color: var(--color-syntax-variable)
+
+.hljs-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-regexp
+  color: var(--color-syntax-string)
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta,
+.hljs-number,
+.hljs-link
+  color: var(--color-syntax-symbol)
+
+.hljs-title,
+.hljs-doctag,
+.hljs-type,
+.hljs-attr,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-params
+  color: var(--color-syntax-param)
+
+.hljs-attribute,
+.hljs-subst
+  color: var(--color-syntax-attribute)
+
+.hljs-formula
+  background-color: var(--color-syntax-formula-bg)
+  font-style: italic
+
+.hljs-selector-id,
+.hljs-selector-class
+  color: var(--color-syntax-selector)
+
+.hljs-addition
+  background-color: var(--color-syntax-addition)
+
+.hljs-deletion
+  background-color: var(--color-syntax-deletion)
+
+.hljs-doctag,
+.hljs-strong
+  font-weight: bold
+
+.hljs-emphasis
+  font-style: italic
