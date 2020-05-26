@@ -11,7 +11,6 @@ export default function Post({ postData }) {
           {postData.title} – {siteTitle}
         </title>
         <script src="/scripts/highlight.pack.js" />
-        <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}} />
         <link rel="stylesheet" href="/styles/googlecode.css" />
       </Head>
       <article>
@@ -21,6 +20,7 @@ export default function Post({ postData }) {
         </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
+      <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}} />
     </Layout>
   );
 }

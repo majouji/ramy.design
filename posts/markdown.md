@@ -3,17 +3,19 @@ title: "Markdown styles"
 date: "2020-01-31"
 ---
 
-# Hi, I’m Ramy. Welcome to my home online.
+### Hi, I’m Ramy. Welcome to my home online.
 
 I hail from Montréal, Canada where I studied graphic design and developed a strong interest technology, design, and editorial photography very early on.
 
 I have spent the last 8 years building digital products and apps at companies like Square, Codecademy, Citymaps (acquired by TripAdvisor in 2016), Busbud, and the National Film Board of Canada. Currently, I am a Product Designer at Glossier, building brand new experiences for the beauty world. Products and contributions of mine have been highlighted by publications such as Fast Company, Fonts in Use, CBC/Radio-Canada, Condé; Nast, Inc, and Y Combinator.
 
-As a photographer, I’ve been consistently creating personal work for the past 10 years — with a strong focus on editorial and travel photography — and have seen some of it published by Forbes, Yahoo Finance, and Built in NYC.
+As a photographer, I’ve been consistently creating personal work for the past 10 years — <q>with a strong focus on editorial and travel</q> photography — and have seen some of it published by Forbes, Yahoo Finance, and Built in NYC.
 
 All the styles yo. My favorite keyboard shortcut is <kbd>⌘ + Shift + Alt + 8</kbd>. Make sure to do `npm install` to lorem ipsum dolor.
 
 It's very easy to make some words **bold** and other words _italic_ with Markdown. You can even [link to Google!](http://google.com)
+
+![alt](https://images.ctfassets.net/2d5q1td6cyxq/5IVm8Alsyck2Mg4066WMCU/309b78be5fb79114ca0c84999b93265f/rst-pos01.png)
 
 Sometimes you want numbered lists:
 

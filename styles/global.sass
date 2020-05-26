@@ -50,9 +50,11 @@ a
     bottom: 0
     transition: 70ms ease-out
 
+article
+  font-family: var(--font-serif-ibm)
+
 article p
-  font-family: var(--font-serif-text)
-  font-size: var(--font-size-large)
+  font-size: var(--font-size-medium)
   line-height: 32px
 
 ul, ol
@@ -61,8 +63,6 @@ ul, ol
 ol
   font-variant-numeric: tabular-nums
 
-article img
-  margin: 0 auto
 
 pre, code, kbd
   font-family: var(--font-mono-ibm)
@@ -99,10 +99,14 @@ iframe
   border: 0
 
 blockquote
-  font-family: var(--font-serif-text)
+  font-family: var(--font-serif)
   font-size: var(--font-size-large)
   line-height: 1.45
   margin: 0
+  padding-left: 24px
+  border-left: 1px solid var(--background-code)
+
+blockquote 
 
 blockquote .author
   text-transform: uppercase

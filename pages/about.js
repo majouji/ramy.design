@@ -9,6 +9,32 @@ export default function About() {
         <title>About &ndash; {siteTitle}</title>
       </Head>
       <h3>Hi, I’m Ramy. Welcome to my home online.</h3>
+      <aside>
+       <div className="table-row">
+          <div className="column">
+            <span className="table-header">Direction</span>
+          </div>
+          <div className="column">
+            <span className="table-value">Dave Johannes</span>
+          </div>
+        </div>
+        <div className="table-row">
+          <div className="column">
+            <span className="table-header">Direction</span>
+          </div>
+          <div className="column">
+            <span className="table-value">Dave Johannes</span>
+          </div>
+        </div>
+        <div className="table-row">
+          <div className="column">
+            <span className="table-header">Direction</span>
+          </div>
+          <div className="column">
+            <span className="table-value">Dave Johannes</span>
+          </div>
+        </div>
+      </aside>
       <p>
         I hail from Montréal, Canada where I studied graphic design and
         developed a strong interest technology, design, and editorial
