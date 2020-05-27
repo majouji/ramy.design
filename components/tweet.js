@@ -16,3 +16,10 @@ export default function TweetButton() {
     </div>
   );
 }
+
+export function NewTweetButton({ pageTitle, pageURL }) {
+  <button className="twitter-share-button">
+    <a href=”https://twitter.com/intent/tweet?text={`${pageTitle}`}&url={`${pageURL}`}”</a>
+    Tweet (New!)
+  </button>
+}
