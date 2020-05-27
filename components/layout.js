@@ -11,7 +11,7 @@ export const metaDescription =
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header home />
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
