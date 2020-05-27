@@ -17,15 +17,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
         <p>
-          Product Designer, currently building new things at{" "}
-          <a
-            className="glossier-link"
-            href="https://glossier.com"
-            target="blank"
-          >
-            Glossier
-          </a>{" "}
-          in New York. Previously from Square, Codecademy, and Cadre. Sharing
+          Product Designer, currently building new things at Glossier in New
+          York. Previously from Square, Codecademy, and Cadre. Sharing
           photography, tech tips, random quotes, and other nonsense here since
           2008.
         </p>

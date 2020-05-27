@@ -1,4 +1,3 @@
-@import variables.sass
 @media (prefers-reduced-motion: reduce)
   *
     -webkit-animation: none !important
@@ -17,10 +16,15 @@ body, html
   color: var(--color-text)
   padding: 0
   margin: 0
-  font-family: var(--font-sans)
+  font-family: var(--font-sans-ibm)
   font-size: var(--font-size-base)
   font-weight: 400
   line-height: 1.6
+
+#__next
+  display: grid
+  gap: 1rem
+  grid-template-columns: repeat(16, 1fr)
 
 ::selection
   background: var(--color-accent)
@@ -51,22 +55,19 @@ a
     bottom: 0
     transition: 70ms ease-out
 
-article p
-  font-family: var(--font-serif-text)
-  font-size: var(--font-size-large)
-  line-height: 32px
+article
+  font-family: var(--font-)
 
-ul, ol
-  padding: 0 20px
+article p
+  font-size: var(--font-size-medium)
+  line-height: 32px
 
 ol
   font-variant-numeric: tabular-nums
 
-article img
-  margin: 0 auto
 
 pre, code, kbd
-  font-family: var(--font-mono)
+  font-family: var(--font-mono-ibm)
   font-size: var(--font-size-code)
   background-color: var(--background-code)
   border-radius: var(--border-radius)
@@ -76,6 +77,9 @@ button
 
 pre
   padding: 16px
+  overflow-x: auto
+  white-space: pre-wrap
+  word-wrap: break-word
 
 code, kbd
   font-size: var(--font-size-code)
@@ -97,10 +101,12 @@ iframe
   border: 0
 
 blockquote
-  font-family: var(--font-serif-text)
+  font-family: var(--font-serif)
   font-size: var(--font-size-large)
   line-height: 1.45
   margin: 0
+  padding-left: 24px
+  border-left: 1px solid var(--background-code)
 
 blockquote .author
   text-transform: uppercase
@@ -122,9 +128,18 @@ img a
   &:hover
     border-bottom: unset
 
+header
+  grid-column: 1 / 16
+
 header p
   margin: 0
-
+  
+header ul
+  display: block
+  margin: 0
+  padding: 0
+  list-style-type: none
+  
 figcaption
   color: var(--color-text-secondary)
   font-size: var(--font-size-small)
@@ -133,6 +148,7 @@ figcaption
 
 footer
   margin-top: 64px
+  font-size: var(--font-size-small)
 
 footer p
   color: var(--color-text-secondary)
@@ -153,15 +169,6 @@ td
 
 th
   text-align: left
-
-nav li
-  background-color: var(--background-code)
-  border-radius: var(--border-radius)
-  margin: 0 8px
-  list-style-type: none
-  display: inline-block
-  font-size: var(--font-size-base)
-  padding: 16px
 
 .post-title
   margin: 16px 0
@@ -238,13 +245,83 @@ nav li
   height: 380px
 
 .grid
-  align-items: end
-  display: grid
-  gap: 1rem
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
+  align-items: start
 
 .grid figure
   margin: 0
 
 .grid a
   margin-top: 0
+
+.hljs
+  display: block
+  overflow-x: auto
+
+.hljs-comment,
+.hljs-quote
+  color: var(--color-syntax-comment)
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-title,
+.hljs-name
+  color: var(--color-syntax-title)
+
+.hljs-variable,
+.hljs-template-variable
+  color: var(--color-syntax-variable)
+
+.hljs-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-regexp
+  color: var(--color-syntax-string)
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta,
+.hljs-number,
+.hljs-link
+  color: var(--color-syntax-symbol)
+
+.hljs-title,
+.hljs-doctag,
+.hljs-type,
+.hljs-attr,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-params
+  color: var(--color-syntax-param)
+
+.hljs-attribute,
+.hljs-subst
+  color: var(--color-syntax-attribute)
+
+.hljs-formula
+  background-color: var(--color-syntax-formula-bg)
+  font-style: italic
+
+.hljs-selector-id,
+.hljs-selector-class
+  color: var(--color-syntax-selector)
+
+.hljs-addition
+  background-color: var(--color-syntax-addition)
+
+.hljs-deletion
+  background-color: var(--color-syntax-deletion)
+
+.hljs-doctag,
+.hljs-strong
+  font-weight: bold
+
+.hljs-emphasis
+  font-style: italic
+
+.inner-page-left-column
+  grid-column: 1 / 1
+
+.inner-page-main-column
+  grid-column: 8 / 16

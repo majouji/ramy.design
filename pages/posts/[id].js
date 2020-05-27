@@ -1,8 +1,7 @@
-import Layout, { siteTitle } from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
-import Date from "../../components/date";
-import Head from "next/head";
-import TweetButton from "../../components/tweet";
+import Layout, { siteTitle } from "../../components/layout"
+import { getAllPostIds, getPostData } from "../../lib/posts"
+import Date from "../../components/date"
+import Head from "next/head"
 
 export default function Post({ postData }) {
   return (
@@ -11,18 +10,17 @@ export default function Post({ postData }) {
         <title>
           {postData.title} – {siteTitle}
         </title>
+        <script src="/scripts/highlight.pack.js" />
+        <link rel="stylesheet" href="/styles/googlecode.css" />
       </Head>
       <article>
         <h1 className="post-title">{postData.title}</h1>
         <div>
           <Date dateString={postData.date} />
         </div>
-        <TweetButton
-          text="My post title"
-          url="https://example.com"
-          />
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
+      <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}} />
     </Layout>
   );
 }
