@@ -1,11 +1,42 @@
 :root
+  // Font Fallbacks
+  --font-fallback-sans: -apple-system, Helvetica, Arial, sans-serif
+  --font-fallback-serif: Georgia, serif
+  --font-fallback-mono: Menlo, Monaco, monospace
+
   // Font Families
-  --font-sans: 'Sohne', --apple-system, Helvetica, Arial, sans-serif
-  --font-serif-text: 'Heldane Text', Georgia, serif
-  --font-serif-display: 'Heldane Display', Georgia, serif
-  --font-mono: 'SF Mono', Menlo, Monaco, monospace
-  --font-mono-ibm: 'IBM Plex Mono', monospace
-  --font-serif-ibm: 'IBM Plex Serif', serif
+  --font-sans: 'Sohne', var(--font-fallback-sans)
+  --font-serif-text: 'Heldane Text', var(--font-fallback-sans)
+  --font-serif-display: 'Heldane Display', var(--font-fallback-sans)
+  --font-serif-ibm: 'IBM Plex Serif', var(--font-fallback-sans)
+  --font-mono: 'SF Mono', var(--font-fallback-mono)
+  --font-mono-ibm: 'IBM Plex Mono', var(--font-fallback-mono)
+
+  // Font Sizes
+  --font-size-xlarge:             32px
+  --font-size-large:              24px
+  --font-size-medium:             21px
+  --font-size-base:               16px
+  --font-size-small:              14px
+  --font-size-tiny:               12px
+  --font-size-code:               13px
+
+  // Breakpoints
+  --break-xs:                     320px
+  --break-small:                  480px
+  --break-medium:                 768px
+  --break-large:                  1024px
+  --break-wide-1:                 1256px
+  --break-wide-2:                 1440px
+  --break-wide-3:                 1680px
+  --break-wide-4:                 1920px
+
+  // Animation & transition
+  --transition:                   100ms ease-out
+  --animation-fast:               cubic-bezier(0.19,1,0.22,1)
+
+  // Misc config
+  --border-radius:                4px
 
   // Colors
   --background-main:            #FAFAF8
@@ -52,19 +83,3 @@
     --color-syntax-selector:  #9B703F
     --color-syntax-addition:  #55a532
     --color-syntax-deletion:  #bd2c00
-
-  // Font Sizes
-  --font-size-xlarge:             32px
-  --font-size-large:              24px
-  --font-size-medium:             21px
-  --font-size-base:               16px
-  --font-size-small:              14px
-  --font-size-tiny:               12px
-  --font-size-code:               13px
-
-  // Animation & transition
-  --transition:                   100ms ease-out
-  --animation-fast:               cubic-bezier(0.19,1,0.22,1)
-
-  // Misc config
-  --border-radius:                4px

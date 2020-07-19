@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-body, html
+body,html
   background-color: var(--background-main)
   color: var(--color-text)
   padding: 0
@@ -21,7 +21,8 @@ body, html
   font-weight: 400
   line-height: 1.6
 
-::selection
+::selection,
+::-moz-selection
   background: var(--color-accent)
   color: var(--background-main)
 
@@ -29,10 +30,6 @@ a::selection
   background-color: var(--color-accent)
   color: var(--color-text)
   text-decoration: underline !important
-
-::-moz-selection
-  background-color: var(--color-accent)
-  color: var(--background-main)
 
 h1
   font-size: var(--font-size-large)
@@ -53,9 +50,10 @@ a
 article
   font-family: var(--font-serif-ibm)
 
-article p
-  font-size: var(--font-size-medium)
-  line-height: 32px
+  p
+    font-size: var(--font-size-medium)
+    line-height: 32px
+
 
 ul, ol
   padding: 0 20px
@@ -70,9 +68,6 @@ pre, code, kbd
   background-color: var(--background-code)
   border-radius: var(--border-radius)
 
-button
-  border: 0
-
 pre
   padding: 16px
   overflow-x: auto
@@ -85,6 +80,9 @@ code, kbd
 
 kbd
   text-transform: uppercase
+
+button
+  border: 0
 
 mark
   background-color: var(--color-highlight)
@@ -105,14 +103,13 @@ blockquote
   margin: 0
   padding-left: 24px
   border-left: 1px solid var(--background-code)
-
-blockquote .author
-  text-transform: uppercase
-  font-family: var((--font-sans))
-  letter-spacing: .5px
-  font-size: var(--font-size-small)
-  font-weight: 700
-  color: var(--color-text-secondary)
+  .author
+    text-transform: uppercase
+    font-family: var((--font-sans))
+    letter-spacing: .5px
+    font-size: var(--font-size-small)
+    font-weight: 700
+    color: var(--color-text-secondary)
 
 img
   max-width: 100%
@@ -120,11 +117,11 @@ img
   &:hover
     text-decoration: none
 
-img a
-  text-decoration: none
-  border-bottom: none
-  &:hover
-    border-bottom: unset
+  a
+    text-decoration: none
+    border-bottom: none
+    &:hover
+      border-bottom: unset
 
 header p
   margin: 0
@@ -138,20 +135,20 @@ figcaption
 footer
   margin-top: 64px
 
-footer p
-  color: var(--color-text-secondary)
-  font-size: var(--font-size-small)
-  margin: 4px 0
-  line-height: 1.4
+  p
+    color: var(--color-text-secondary)
+    font-size: var(--font-size-small)
+    margin: 4px 0
+    line-height: 1.4
 
-footer a
-  color: var(--color-text)
-  text-decoration: none
+  a
+    color: var(--color-text)
+    text-decoration: none
 
-footer hr
-  border: .5px solid var(--background-code)
-  margin: 20px 0
-
+  hr
+    border: .5px solid var(--background-code)
+    margin: 20px 0
+  
 td
   padding-right: 40px
 
@@ -193,9 +190,8 @@ nav li
   margin: 0
   padding: 0
 
-.contains-task-list input
-  &:disabled
-    background-color: blue
+input:disabled
+  background-color: blue
 
 .task-list-item
   list-style: none
@@ -206,7 +202,7 @@ nav li
   border-radius: var(--border-radius)
   padding: 40px
   width: 100%
-  @media screen and ( max-width: 380px )
+  @media screen and ( max-width: var(--break-small) )
     padding: 16px
 
 .flush-bottom
@@ -252,75 +248,8 @@ nav li
   gap: 1rem
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
 
-.grid figure
-  margin: 0
-
-.grid a
-  margin-top: 0
-
-.hljs
-  display: block
-  overflow-x: auto
-
-.hljs-comment,
-.hljs-quote
-  color: var(--color-syntax-comment)
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-section,
-.hljs-title,
-.hljs-name
-  color: var(--color-syntax-title)
-
-.hljs-variable,
-.hljs-template-variable
-  color: var(--color-syntax-variable)
-
-.hljs-string,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-regexp
-  color: var(--color-syntax-string)
-
-.hljs-literal,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-meta,
-.hljs-number,
-.hljs-link
-  color: var(--color-syntax-symbol)
-
-.hljs-title,
-.hljs-doctag,
-.hljs-type,
-.hljs-attr,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-params
-  color: var(--color-syntax-param)
-
-.hljs-attribute,
-.hljs-subst
-  color: var(--color-syntax-attribute)
-
-.hljs-formula
-  background-color: var(--color-syntax-formula-bg)
-  font-style: italic
-
-.hljs-selector-id,
-.hljs-selector-class
-  color: var(--color-syntax-selector)
-
-.hljs-addition
-  background-color: var(--color-syntax-addition)
-
-.hljs-deletion
-  background-color: var(--color-syntax-deletion)
-
-.hljs-doctag,
-.hljs-strong
-  font-weight: bold
-
-.hljs-emphasis
-  font-style: italic
+  a
+    margin-top: 0
+    
+  figure
+    margin: 0
