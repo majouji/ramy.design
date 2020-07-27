@@ -11,7 +11,6 @@ export default function Post({ postData }) {
           {postData.title} – {siteTitle}
         </title>
         <script src="/scripts/highlight.pack.js" />
-        <link rel="stylesheet" href="/styles/googlecode.css" />
       </Head>
       <article>
         <h1 className="post-title">{postData.title}</h1>

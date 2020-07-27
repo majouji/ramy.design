@@ -31,7 +31,7 @@ export function ButtonInternal({ label, url }) {
   return (
     <Link href={url}>
       <a>
-        <button className="button-container">{label} Hello</button>
+        <button className="button-container">{label}</button>
       </a>
     </Link>
   );

@@ -1,6 +1,5 @@
-import Layout, { siteTitle } from "../components/layout";
-import Head from "next/head";
-import { AppleMusicEmbed, SpotifyEmbed } from "../components/embeds";
+import Layout, { siteTitle } from "../components/layout"
+import Head from "next/head"
 
 export default function About() {
   return (
