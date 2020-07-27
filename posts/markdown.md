@@ -75,6 +75,20 @@ Here’s some emoji 🤛🏽👄💻🏔
 | Content from cell 1         | Content from cell 2          |
 | Content in the first column | Content in the second column |
 
+## Code Highlighting
+
+```jsx
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].addEventListener('keyup', e => {
+    if (e.keyCode !== 13) return
+    openAccordionTab(tabs[i])
+  })
+  tabs[i].addEventListener('click', e => {
+    openAccordionTab(tabs[i])
+  })
+}
+```
+
 # Heading 1
 
 All the styles yo
