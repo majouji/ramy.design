@@ -8,7 +8,7 @@ export default function Work() {
       <Head>
         <title>Work – {siteTitle}</title>
       </Head>
-      <div className="grid">
+      <div className="grid grid-work">
         <Card
           title="Square"
           subtitle="2013"
