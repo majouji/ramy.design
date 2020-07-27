@@ -14,7 +14,7 @@ export default function About() {
             <span className="table-header">Direction</span>
           </div>
           <div className="column">
-            <span className="table-value">Dave Johannes</span>
+            <span className="table-value">John Smith</span>
           </div>
         </div>
         <div className="table-row">
@@ -22,7 +22,7 @@ export default function About() {
             <span className="table-header">Direction</span>
           </div>
           <div className="column">
-            <span className="table-value">Dave Johannes</span>
+            <span className="table-value">John Smith</span>
           </div>
         </div>
         <div className="table-row">
@@ -30,7 +30,7 @@ export default function About() {
             <span className="table-header">Direction</span>
           </div>
           <div className="column">
-            <span className="table-value">Dave Johannes</span>
+            <span className="table-value">John Smith</span>
           </div>
         </div>
       </aside>

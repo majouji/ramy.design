@@ -8,7 +8,7 @@ export default function Work() {
       <Head>
         <title>Work – {siteTitle}</title>
       </Head>
-      <div className="cards-row">
+      <div className="grid">
         <Card
           title="Square"
           subtitle="2013"
@@ -18,8 +18,24 @@ export default function Work() {
           linkTo="/work/square"
         />
         <Card
-          title="Cadre"
-          subtitle="2015"
+          title="Square"
+          subtitle="2013"
+          description="Redesigning Codecademy’s learning environment to unlock learning beyond HTML and CSS"
+          src="/images/work/register.png"
+          alt="Square Register"
+          linkTo="/work/square"
+        />
+        <Card
+          title="Square"
+          subtitle="2013"
+          description="Redesigning Codecademy’s learning environment to unlock learning beyond HTML and CSS"
+          src="/images/work/register.png"
+          alt="Square Register"
+          linkTo="/work/square"
+        />
+        <Card
+          title="Square"
+          subtitle="2013"
           description="Redesigning Codecademy’s learning environment to unlock learning beyond HTML and CSS"
           src="/images/work/register.png"
           alt="Square Register"
