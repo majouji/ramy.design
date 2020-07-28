@@ -14,7 +14,7 @@ export default function About() {
         enjoyed. Few of them are related to design, but if like me, you like
         books that make you think, hopefully you’ll find some good ones here. <a href="#novels">Jump to novels!</a>
       </p>
-      <section>
+      <section id="design">
         <h3>Design</h3>
         <div className="grid">
           <Book

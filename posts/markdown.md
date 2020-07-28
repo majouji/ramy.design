@@ -51,7 +51,7 @@ Alternatively,
 ## Quotes
 
 > Coffee. The finest organic <kbd>Cmd + Alt + 5</kbd> suspension ever devised... I <mark>beat the Borg</mark> with it.<br />
-> <span class="author">&mdash; Captain Janeway</span>
+> <p class="author">&mdash; Captain Janeway</p>
 
 Here’s some emoji 🤛🏽👄💻🏔
 

@@ -3,8 +3,7 @@ import Link from "next/link";
 import Footer from "./footer";
 import Header from "./header";
 
-const name = "@majouji";
-export const siteTitle = "Ramy Majouji, Product Designer";
+export const siteTitle = "Ramy Majouji";
 export const metaDescription =
   "Ramy Majouji is a product designer and developer in New York, currently at Glossier.";
 

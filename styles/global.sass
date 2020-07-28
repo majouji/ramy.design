@@ -20,24 +20,31 @@ html
   font-family: var(--font-sans)
   font-size: var(--font-size-base)
   font-weight: 400
-  line-height: 1.6
+  @media screen and ( max-width: 480px  )
+    font-size: var(--font-size-medium)
+    line-height: 1.5
 ::selection,
 ::-moz-selection
   background: var(--color-accent)
   color: var(--background-main)
 a::selection
   background-color: var(--color-accent)
-  color: var(--color-text)
+  color: var(--background-main)
   text-decoration: underline !important
 
 main
   margin: 0 auto
 
-h1, h2, h3, h4, h5, h6
+#site-title
+  margin: unset
+
+#site-subhead
+  color: var(--color-text-secondary)
+  font-weight: 400
   margin: unset
 
 h1
-  font-size: var(--font-size-large)
+  font-size: 36px
 
 a
   color: var(--color-accent)
@@ -55,19 +62,16 @@ a
 article
   font-family: var(--font-serif-ibm)
   p
-    font-size: var(--font-size-base)
-    line-height: calc(1.5 * var(--font-size-base))
+    line-height: 1.5
   figure
     margin: 0
 
-
 ul,
 ol
-  padding: 0
+  padding: 0 0 0 16px
 
 ol
   font-variant-numeric: tabular-nums
-
 
 pre,
 code,
@@ -108,12 +112,14 @@ iframe
 
 blockquote
   font-family: var(--font-serif-text)
-  line-height: 1.45
+  line-height: 1.6
+  width: 70%
   margin: 0
-  padding-left: 24px
-  border-left: 1px solid var(--background-code)
+  padding-left: 16px
+  border-left: 1px solid var(--color-text-secondary)
   p
     font-size: var(--font-size-large)
+    margin: 16px 0 8px 0
   .author
     text-transform: uppercase
     font-family: var((--font-sans))
@@ -161,9 +167,9 @@ footer
   hr
     border: .5px solid var(--background-code)
     margin: 20px 0
-  
+
 td
-  padding-right: 40px
+  padding-right: 24px
 
 th
   text-align: left
@@ -179,6 +185,9 @@ nav li
     color: var(--color-text)
   &:hover
     transition: all 140ms ease-out
+
+nav ul
+  padding: unset
 
 .header-photo
   border-radius: 9999px
@@ -259,10 +268,11 @@ input:disabled
   height: 380px
 
 .grid
-  align-items: end
   display: grid
-  gap: 2rem
+  grid-gap: 2rem
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
+  @media screen and ( max-width: 480px )
+    gap: 1.5rem
   a
     margin-top: 0
   figure
@@ -283,7 +293,7 @@ input:disabled
     padding: unset
     max-height: 320px
     width: auto
-    margin: 0 auto 12px auto
+    margin: 0 auto 20px auto
     padding: 0 16px
     img
       max-height: calc(320px - 32px)
@@ -291,8 +301,12 @@ input:disabled
       margin: auto
       padding: 16px
 
+.card-title
+  margin: 0 0 4px 0
+
 .card-subtitle
   color: var(--color-text-secondary)
+  margin: unset
 
 .card-description
   grid-column-start: 2
@@ -300,14 +314,22 @@ input:disabled
   font-size: var(--font-size-small)
   line-height: 1.5
   color: var(--color-text-secondary)
-  text-align: right
 
 .card-info
   display: flex
-  gap: 32px
+  gap: 24px
   align-items: baseline
   .card-column-left
-    flex-basis: 128px
+    flex-basis: 35%
   span
-    flex-basis: 70%
+    flex-basis: 65%
     flex-grow: 1
+
+.book
+  .book-author
+    @media screen and ( max-width: 480px )
+      font-size: var(--font-size-base)
+  p
+    margin-bottom: unset
+    span
+      color: var(--color-text)
