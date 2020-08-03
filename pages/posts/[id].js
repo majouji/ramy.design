@@ -2,6 +2,7 @@ import Layout, { siteTitle } from "../../components/layout"
 import { getAllPostIds, getPostData } from "../../lib/posts"
 import Date from "../../components/date"
 import Head from "next/head"
+import '../../components/highlight.js'
 
 export default function Post({ postData }) {
   return (
