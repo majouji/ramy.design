@@ -1,6 +1,6 @@
 import Layout, { siteTitle } from "../../components/layout"
 import { getAllPostIds, getPostData } from "../../lib/posts"
-import Date from "../../components/date"
+import DisplayDate from "../../components/date"
 import Head from "next/head"
 
 export default function Post({ postData }) {
@@ -15,7 +15,7 @@ export default function Post({ postData }) {
       <article>
         <h1 className="post-title">{postData.title}</h1>
         <div>
-          <Date dateString={postData.date} />
+          <DisplayDate dateString={postData.date} />
         </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
