@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Date from "../components/date";
+import DisplayDate from "../components/date";
 import { metaDescription } from "../components/layout";
 
 export default function Home({ allPostsData }) {
@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
               </Link>
               <br />
               <small>
-                <Date dateString={date} />
+                <DisplayDate dateString={date} />
               </small>
             </li>
           ))}
