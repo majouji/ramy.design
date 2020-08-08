@@ -2,7 +2,6 @@ import Layout, { siteTitle } from "../../components/layout"
 import { getAllPostIds, getPostData } from "../../lib/posts"
 import Date from "../../components/date"
 import Head from "next/head"
-import '../../components/highlight.js'
 
 export default function Post({ postData }) {
   return (
@@ -11,7 +10,7 @@ export default function Post({ postData }) {
         <title>
           {postData.title} – {siteTitle}
         </title>
-        <script src="/scripts/highlight.pack.js" />
+        <script src="/scripts/highlight.js" />
       </Head>
       <article>
         <h1 className="post-title">{postData.title}</h1>
@@ -20,7 +19,6 @@ export default function Post({ postData }) {
         </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}} />
     </Layout>
   );
 }
