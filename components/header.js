@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <Link href="/"><a><h1 id="site-title">Ramy Majouji</h1></a></Link>
-      <h5 id="site-subhead">Product Designer</h5>
+      <h2 id="site-subhead">Product Designer</h2>
       <nav>
         <ul>
           <li><Link href="/"><a>Blog</a></Link></li>
